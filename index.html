@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantumcom</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantumcom</title>
 
-    <meta name="description"
+  <meta name="description"
     content="Explore o fascinante mundo da computação quântica neste site interativo e informativo. Descubra os principais avanços, conceitos fundamentais, aplicações práticas e oportunidades emocionantes nesta área emergente da tecnologia. Desde algoritmos quânticos até sistemas de hardware, mergulhe nas possibilidades revolucionárias que a computação quântica oferece para o futuro da computação e da ciência.">
-    <meta name="robots" content="index, follow">
-      <meta name="og:title" content="Quantumcom">
-    <meta name="og:description"
-      content="Explore o fascinante mundo da computação quântica neste site interativo e informativo. Descubra os principais avanços, conceitos fundamentais, aplicações práticas e oportunidades emocionantes nesta área emergente da tecnologia. Desde algoritmos quânticos até sistemas de hardware, mergulhe nas possibilidades revolucionárias que a computação quântica oferece para o futuro da computação e da ciência.">
-      <meta name="og:image" content="https://i.ibb.co/cTYWGqG/icon.png">
-      <!-- <meta name="og:url" content=""> -->
+  <meta name="robots" content="index, follow">
+  <meta name="og:title" content="Quantumcom">
+  <meta name="og:description"
+    content="Explore o fascinante mundo da computação quântica neste site interativo e informativo. Descubra os principais avanços, conceitos fundamentais, aplicações práticas e oportunidades emocionantes nesta área emergente da tecnologia. Desde algoritmos quânticos até sistemas de hardware, mergulhe nas possibilidades revolucionárias que a computação quântica oferece para o futuro da computação e da ciência.">
+  <meta name="og:image" content="https://i.ibb.co/cTYWGqG/icon.png">
+  <!-- <meta name="og:url" content=""> -->
 
-    <link rel="stylesheet" href="./Assets/CSS/home.css">
-    <link rel="shortcut icon" href="./Assets/Media/Imagens/icon.png" type="image/png">
-  </head>
+  <link rel="stylesheet" href="./Assets/CSS/home.css">
+  <link rel="shortcut icon" href="./Assets/Media/Imagens/icon.png" type="image/png">
+</head>
 
-  <body>
-    <nav>
-      <button class="btn-tamanho1 btn-cor-primaria btn-menu">
-        <img src="./Assets/Icones/menu-hamburguer.svg" alt="" class="icon-set small-icon">
-      </button>
+<body>
+  <header>
+    <button class="btn-tamanho1 btn-cor-primaria btn-menu" onclick="handleShowModal()">
+      <img src="./Assets/Icones/menu-hamburguer.svg" alt="" class="icon-set small-icon">
+    </button>
 
-      <img src="./Assets/Media/Imagens/logo_quantumcom.png" alt="Logo do nosso site" class="logo" />
-      <ul class="hanken-grotesk">
-        <li><a href="#">Link3</a></li>
-        <li><a href="#">Link2</a></li>
-        <li><a href="#">Link3</a></li>
-        <li><a href="#">Link4</a></li>
-      </ul>
-    </nav>
-    <main>
+    <img src="./Assets/Media/Imagens/logo_quantumcom.png" alt="Logo do nosso site" class="logo" />
+    <ul class="hanken-grotesk small-text navbar__links mobile__hidden">
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Notícias</a>
+      </li>
+      <li>
+        <a href="">Sobre nós</a>
+      </li>
+    </ul>
+  </header>
+  <nav class="poppins menu__links hidden">
+    <ul>
+      <li class="navigation__home mobile__show">
+        <a href="">Home</a>
+        <a href="">Notícias</a>
+        <a href="">Sobre nós</a>
+      </li>
+      <hr class="mobile__show" />
+      <li><a href="">Portas Lógicas Quânticas</a></li>
+      <li><a href="">Linguagem Assembler Quântica</a></li>
+      <li><a href="">O Átomo de Fósforo na Computação Quântica</a></li>
+      <li><a href="">Prompts de Computação Quântica</a></li>
+      <li><a href="">Aplicações Existentes de Computação Quântica</a></li>
+      <li><a href="">Cursos e Oportunidades de Estudo em Computação Quântica</a></li>
+      <li><a href="">Inteligência Artificial e Computação Quântica</a></li>
+    </ul>
+  </nav>
+  <main>
 
-    </main>
-    <footer>
-      <hr/>
-      <div class="medias-sociais">
-        <a href="#">
-          <img src="./Assets/Icones/instagram.svg" alt="" class="icon-set medium-icon">
-        </a>
-        <a href="#">
-          <img src="./Assets/Icones/linkedin.svg" alt="" class="icon-set medium-icon">
-        </a>
-        <a href="#">
-          <img src="./Assets/Icones/whatsapp.svg" alt="" class="icon-set medium-icon">
-        </a>
-        <a href="#">
-          <img src="./Assets/Icones/tik-tok.svg" alt="" class="icon-set medium-icon">
-        </a>
-        <a href="#">
-          <img src="./Assets/Icones/reddit.svg" alt="" class="icon-set medium-icon">
-        </a>
-        <a href="#">
-          <img src="./Assets/Icones/github.svg" alt="" class="icon-set medium-icon">
-        </a>
-      </div>
-      <div>
-        <p class="poppins small-text">©Copyright 2024, todos os direitos reservados</p>
-      </div>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <hr />
+    <div class="medias-sociais">
+      <a href="#">
+        <img src="./Assets/Icones/instagram.svg" alt="" class="icon-set medium-icon">
+      </a>
+      <a href="#">
+        <img src="./Assets/Icones/linkedin.svg" alt="" class="icon-set medium-icon">
+      </a>
+      <a href="#">
+        <img src="./Assets/Icones/whatsapp.svg" alt="" class="icon-set medium-icon">
+      </a>
+      <a href="#">
+        <img src="./Assets/Icones/tik-tok.svg" alt="" class="icon-set medium-icon">
+      </a>
+      <a href="#">
+        <img src="./Assets/Icones/reddit.svg" alt="" class="icon-set medium-icon">
+      </a>
+      <a href="#">
+        <img src="./Assets/Icones/github.svg" alt="" class="icon-set medium-icon">
+      </a>
+    </div>
+    <div>
+      <p class="poppins small-text">©Copyright 2024, todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="./Assets/Scripts/showModal.js"></script>
+</body>
 
 </html>

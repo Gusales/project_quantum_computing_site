@@ -24,30 +24,36 @@ body {
 }
 
 /* Navegação */
-nav {
+nav,
+header {
     /* Fixa a navegação no topo */
     position: fixed;
     padding: 10px;
 }
 
-nav ul {
+nav ul,
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+nav ul li,
+header ul li {
     display: inline;
 }
 
-nav ul li a {
+nav ul li a,
+header ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
 }
 
 nav ul li a:hover,
-nav ul li a:active {
+header ul li a:hover,
+nav ul li a:active,
+header ul li a:active {
     /* Realça o texto ao passar o mouse ou ao clicar */
     font-weight: 600;
 }
@@ -281,7 +287,8 @@ main {
 
 /* Efeitos de hover e ativo nos ícones */
 .btn-cor-primaria:hover .icon-set,
-.conjunto div img:hover, .icon-set:hover {
+.conjunto div img:hover,
+.icon-set:hover {
     cursor: pointer;
     filter: invert(55%) sepia(91%) saturate(2058%) hue-rotate(170deg) brightness(88%) contrast(91%);
 }
