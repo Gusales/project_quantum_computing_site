@@ -66,20 +66,72 @@ header {
 .menu__links ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
+  
 }
+
+.menu__links li:not([class*="navigation__home"]) {
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu__links li:not([class*="navigation__home"]):hover {
+  transition: .5s ease-out;
+  outline: 2px solid #1F98D7;
+}
+
+
 
 header>img {
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+}
+header svg{
+  width: 25px;
+  height: 25px;
 }
 
 .btn-menu {
   margin-right: auto;
+}
 
+/* SVG e animação -> peguei da net pra gente ter, mas pdoemso cirar um totalemtne original se preferir */
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 .logo {
