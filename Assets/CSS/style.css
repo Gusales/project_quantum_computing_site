@@ -281,7 +281,7 @@ main {
 
 /* Efeitos de hover e ativo nos ícones */
 .btn-cor-primaria:hover .icon-set,
-.conjunto div img:hover {
+.conjunto div img:hover, .icon-set:hover {
     cursor: pointer;
     filter: invert(55%) sepia(91%) saturate(2058%) hue-rotate(170deg) brightness(88%) contrast(91%);
 }
