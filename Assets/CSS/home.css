@@ -178,26 +178,6 @@ header ul {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  :root {
-    --page-margin: 0rem;
-  }
-
-  .mobile__show {
-    display: block;
-  }
-
-  .mobile__hidden {
-    display: none;
-  }
-
-  header>.logo {
-    width: 55%;
-  }
-}
-
-
 /* Começo do main */
 main {
   display: flex;
@@ -211,4 +191,29 @@ main {
 .medium-img {
   width: fit-content;
   max-height: 200px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  :root {
+    --base-font-size: 14px;
+    --page-margin: 0rem;
+  }
+
+  main h2{
+    font-size: 25px;
+  }
+
+  .mobile__show {
+    display: block;
+  }
+
+  .mobile__hidden {
+    display: none;
+  }
+
+  header>.logo {
+    width: 55%;
+  }
 }
