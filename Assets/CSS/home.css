@@ -29,7 +29,6 @@ section {
   width: calc(100% - var(--page-margin));
   min-height: 100vh;
   height: fit-content;
-  /* background: red; */
   margin: 0 calc(var(--page-margin) / 2);
   padding: 0;
 }
