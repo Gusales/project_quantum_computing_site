@@ -227,6 +227,7 @@ button:hover {
 
 .btn-cor-primaria {
     background: #0F2239;
+    transition: background 400ms;
 }
 
 .btn-cor-primaria:hover {
@@ -235,6 +236,7 @@ button:hover {
 
 .btn-cor-secundaria {
     background: #1C5CB0;
+    transition: background 400ms;
 }
 
 .btn-cor-secundaria:hover {

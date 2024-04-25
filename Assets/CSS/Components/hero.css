@@ -1,0 +1,53 @@
+.hero {
+  min-height: 90vh;
+  margin-top: 10vh;
+  min-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  place-content: center;
+  gap: 2.5rem;
+}
+
+.hero article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero article h1 {
+  letter-spacing: -1px;
+  font-size: 3.5rem;
+}
+
+.hero article a {
+  margin-top: 2rem;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem;
+
+    margin-top: 20vh;
+  }
+
+  .hero article {
+    gap: .25rem;
+  }
+
+  .hero article h1 {
+    font-size: 2rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
