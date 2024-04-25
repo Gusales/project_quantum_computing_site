@@ -1,8 +1,8 @@
 @import './style.css';
 @import './Components/hero.css';
 @import './Components/footer.css';
-@import './Components/computing-origins.css';
 @import './Components/equipes.css';
+@import './Components/timeline.css';
 
 :root {
   /* Tamanho base da fonte */
@@ -28,6 +28,7 @@ main,
 section {
   width: calc(100% - var(--page-margin));
   min-height: 100vh;
+  height: fit-content;
   /* background: red; */
   margin: 0 calc(var(--page-margin) / 2);
   padding: 0;
@@ -41,6 +42,7 @@ header {
   align-items: center;
   margin: 0 2rem;
   padding: 0;
+  z-index: 4;
 }
 
 
@@ -200,13 +202,10 @@ header ul {
 main {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: space-around;
-}
-
-.computing_origins__content {
-  display: flex;
-  flex-direction: row;
+  gap: 4rem;
+  margin: 8rem 0;
 }
 
 .medium-img {
