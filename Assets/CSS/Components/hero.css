@@ -25,7 +25,28 @@
   border-radius: 4px;
   color: #ffffff;
   font-weight: 600;
+}
 
+.next {
+  display: none;
+
+  flex-direction: column;
+  margin: 0 auto;
+
+  animation: float 2s ease-in-out infinite;
+
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translatey(0)
+  }
+
+  50% {
+    transform: translatey(-10px)
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -34,7 +55,7 @@
     flex-direction: column-reverse;
     gap: .5rem;
 
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 
   .hero article {
@@ -45,5 +66,15 @@
     font-size: 2rem;
     letter-spacing: 0;
     text-align: center;
+    word-spacing: 0;
+  }
+
+  .hero article p,
+  .hero article a {
+    display: none;
+  }
+
+  .hero article a.next {
+    display: flex;
   }
 }
