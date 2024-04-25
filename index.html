@@ -17,14 +17,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./Assets/CSS/home.css">
   <link rel="shortcut icon" href="./Assets/Media/Imagens/icon.png" type="image/png">
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 </head>
 
 <body>
   <header>
-    <button class="btn-tamanho1 btn-cor-primaria btn-menu"
-      onclick="handleShowModal(); this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+    <button class="btn-tamanho1 btn-cor-primaria btn-menu" id="handleShowModal"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
       <svg width="100" height="100" viewBox="0 0 100 100" class="icon-set">
         <path class="line line1"
           d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -113,80 +111,510 @@
   <section id="equipes">
     <h2 class="hanken-grotesk">Equipes</h2>
     <hr />
-    <div class="swiper conjunto-equipes">
-      <div class="slide">
-        <div class="card card-pequeno card-vertical">
-          <figure>
-            <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
-          </figure>
-          <div class="card-content hanken-grotesk">
-            <h5>Gustavo Raimundo</h5>
-            <hr />
-            <p class="large-text">
-              Equipe 1
-            </p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Gustavo Raimundo</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 1
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Gustavo Sales</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 1
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>João Lucas Bastos</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 1
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Leonardo Salani</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 1
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Samuel Campos</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 1
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card card-pequeno card-vertical">
-          <figure>
-            <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
-          </figure>
-          <div class="card-content hanken-grotesk">
-            <h5>Gustavo Sales</h5>
-            <hr />
-            <p class="large-text">
-              Equipe 1
-            </p>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Lucas Gonçalves</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 2
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Lucas Dias</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 2
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Guilherme Ferreira</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 2
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="card card-pequeno card-vertical">
-          <figure>
-            <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
-          </figure>
-          <div class="card-content hanken-grotesk">
-            <h5>João Lucas Bastos</h5>
-            <hr />
-            <p class="large-text">
-              Equipe 1
-            </p>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Félix M.</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 3
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Amanda Bandeira</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 3
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Gui Souza</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 3
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Bianca Vitoria</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 3
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Yasmim</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 3
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card card-pequeno card-vertical">
-          <figure>
-            <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
-          </figure>
-          <div class="card-content hanken-grotesk">
-            <h5>Leonardo Salani</h5>
-            <hr />
-            <p class="large-text">
-              Equipe 1
-            </p>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Edineide Diniz</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 4
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Gyovanne Martins</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 4
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Maria Fernanda</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 4
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Yuri Barbosa</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 4
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card card-pequeno card-vertical">
-          <figure>
-            <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
-          </figure>
-          <div class="card-content hanken-grotesk">
-            <h5>Samuel Campos</h5>
-            <hr />
-            <p class="large-text">
-              Equipe 1
-            </p>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Murilo Nogueira</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 5
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>João Pedro Fernandes</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 5
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Tiago Rocha</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 5
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Leonardo Konishi</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 5
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Márcio de Almeira</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 5
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Enzo Henrique</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 6
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Carlos Eduardo</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 6
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Luiz Rodolpho</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 6
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Augusto Catarino</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 6
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Victor Rielo</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 6
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Ana Julia</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 7
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Bianca Duarte</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 7
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Israel Silva</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 7
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Jean Ribeiro</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 7
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Jorge Luiz</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 7
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Kamegawa</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 8
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Gabriel</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 8
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Lorena</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 8
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Yudi</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 8
+                </p>
+              </div>
+            </div>
+            <div class="card card-pequeno card-vertical">
+              <figure>
+                <img src="./Assets/Media/Imagens/placeholder.webp" alt="" class="profile-picture">
+              </figure>
+              <div class="card-content hanken-grotesk">
+                <h5>Ricardo</h5>
+                <hr />
+                <p class="large-text">
+                  Equipe 8
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
   <script src="./Assets/Scripts/home.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
