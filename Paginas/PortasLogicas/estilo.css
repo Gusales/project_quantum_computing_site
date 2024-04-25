@@ -1,4 +1,5 @@
-@import url(../CQ/project_quantum_computing_site-main/project_quantum_computing_site-main/Assets/CSS/style.css);
+@import "../../Assets/CSS/style.css";
+@import "../../Assets/CSS/home.css";
 
 
 .cabecalho {
