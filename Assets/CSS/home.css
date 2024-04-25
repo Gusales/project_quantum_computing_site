@@ -3,6 +3,11 @@
 @import './Components/footer.css';
 @import './Components/computing-origins.css';
 
+:root {
+  /* Tamanho base da fonte */
+  --page-margin: 4rem;
+}
+
 .mobile__show {
   display: none;
 }
@@ -11,19 +16,38 @@ a {
   text-decoration: none;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: green; */
+}
+
+main, section{
+  width: calc(100% - var(--page-margin));
+  min-height: 100vh;
+  /* background: red; */
+  margin: 0 calc(var(--page-margin) / 2);
+  padding: 0;
+}
+
 header {
-  width: 100%;
+  width: calc(100% - var(--page-margin));
+  /* background-color: #1F98D7; */
   min-height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
+  margin: 0 2rem;
+  padding: 0;
 }
+
 
 .menu__links {
   min-height: 90vh;
-  margin-top: 10vh;
+  top: 10vh;
+  left: calc(var(--page-margin) / 2);
   width: fit-content;
+  min-width: 200px;
   border-right: 2px solid rgb(12, 22, 40);
   border-top: 2px solid rgb(12, 22, 40);
   background: #0A0F19;
@@ -39,13 +63,6 @@ header {
 .hidden {
   animation: hiddenMenu .5s ease-in-out;
   display: none;
-}
-
-main {
-  flex-direction: column;
-  justify-content: start;
-  padding: 0 10%;
-  min-height: fit-content;
 }
 
 @keyframes showMenu {
@@ -91,8 +108,6 @@ main {
   outline: 2px solid #1F98D7;
 }
 
-
-
 header>img {
   position: absolute;
   top: 50%;
@@ -109,7 +124,7 @@ header svg {
   margin-right: auto;
 }
 
-/* SVG e animação -> peguei da net pra gente ter, mas pdoemso cirar um totalemtne original se preferir */
+/* SVG e animação*/
 .line {
   fill: none;
   stroke: black;
@@ -159,11 +174,11 @@ header ul {
   margin-left: auto;
 }
 
-main {
-  height: 100vh;
-}
-
 @media screen and (max-width: 768px) {
+
+  :root{
+    --page-margin: 0rem;
+  }
   .mobile__show {
     display: block;
   }
@@ -175,4 +190,23 @@ main {
   header>.logo {
     width: 55%;
   }
+}
+
+
+/* Começo do main */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.computing_origins__content{
+  display: flex;
+  flex-direction: row;
+}
+
+.medium-img {
+  width: fit-content;
+  max-height: 200px;
 }
