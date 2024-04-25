@@ -3,6 +3,7 @@
 @import './Components/footer.css';
 @import './Components/equipes.css';
 @import './Components/timeline.css';
+@import './Components/Cards-animados.css';
 
 :root {
   /* Tamanho base da fonte */
