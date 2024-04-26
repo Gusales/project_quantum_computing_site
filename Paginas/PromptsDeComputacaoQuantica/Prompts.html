@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Style.css">
+  <title>Prompts de Computação Quântica</title>
+</head>
+
+<body>
+  <header>
+    <button class="btn-tamanho1 btn-cor-primaria btn-menu" id="handleShowModal">
+      <svg width="100" height="100" viewBox="0 0 100 100" class="icon-set">
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+
+    <img src="../../Assets/Media/Imagens/logo_quantumcom.png" alt="Logo do nosso site" class="logo" />
+    <ul class="hanken-grotesk regular-text navbar__links mobile__hidden">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="">Notícias</a>
+      </li>
+      <li>
+        <a href="./Paginas/SobreNos/index.html">Sobre nós</a>
+      </li>
+    </ul>
+    <nav class="poppins menu__links hidden">
+      <ul>
+        <li class="navigation__home mobile__show">
+          <a href="./../../index.html">Home</a>
+          <a href="">Notícias</a>
+          <a href="/Paginas/SobreNos/about.html">Sobre nós</a>
+        </li>
+        <hr class="mobile__show" />
+        <li><a href="./../PortasLogicas/pgInicial.html">Portas Lógicas Quânticas</a></li>
+        <li><a href="./../LinguagemAssembler/LinguagemAssembler.html">Linguagem Assembler Quântica</a></li>
+        <li><a href="./../OAtomodeFosforo/Fosforo.html">O Átomo de Fósforo na Computação Quântica</a></li>
+        <li><a href="./Prompts.html">Prompts de Computação Quântica</a></li>
+        <li><a href="./../AplicacoesExistentes/AplicacoesExistentes.html">Aplicações Existentes de Computação Quântica</a></li>
+        <li><a href="./../CursosEOportunidade/Cursos.html">Cursos e Oportunidades de Estudo em Computação Quântica</a></li>
+        <li><a href="./../InteligenciaArtificial/Inteligencia.html">Inteligência Artificial e Computação Quântica</a></li>
+      </ul>
+    </nav>
+  </header>
+  <center>
+    <h1 class="hanken-grotesk">Prompts de Computação Quântica</h1>
+  </center>
+  <center><img src="./../../Assets/Media/Imagens/Quamtum 1.jpg" height="600px" width="auto"></center>
+  <h2 class="hanken-grotesk">Como Funciona a Computação Quântica</h2>
+  <p class="paragraph">Enquanto os computadores clássicos utilizam bits, que podem representar um estado como 0 ou 1, a
+    computação quântica utiliza qubits, que podem representar 0, 1 ou ambos simultaneamente, devido a um fenômeno
+    chamado superposição.<br>
+    Além disso, os qubits podem estar entrelaçados, o que significa que o estado de um qubit está intrinsecamente
+    relacionado ao estado de outro, mesmo que estejam separados por grandes distâncias. Isso permite que a computação
+    quântica realize cálculos de forma paralela em um nível muito maior do que os computadores clássicos.
+  </p>
+  <h3>Tipos de Prompt</h3>
+  <!-- Botão 1 -->
+  <button class="custom-button" onclick="exibirOcultar('texto1')">Simulação de Algoritmos Quânticos</button>
+  <div id="texto1" class="poppinsalt">
+    <p> prompts podem pedir que os pesquisadores projetem algoritmos quânticos para resolver problemas específicos, como
+      fatorização de números inteiros (usado em criptografia), busca em bases de dados não estruturadas ou otimização
+      quântica.</p>
+  </div>
+
+  <!-- Botão 2 -->
+  <button class="custom-button" onclick="exibirOcultar('texto2')">Implementação de Circuitos Quânticos</button>
+  <div id="texto2" class="poppinsalt">
+    <p>prompts podem incluir a criação e a otimização de circuitos quânticos para realizar tarefas como codificação de
+      informação, transformações de estado ou operações lógicas.</p>
+  </div>
+
+  <!-- Botão 3 -->
+  <button class="custom-button" onclick="exibirOcultar('texto3')">Algoritmos de Amplitude Amplification e Busca
+    Quântica</button>
+  <div id="texto3" class="poppinsalt">
+    <p>Os pesquisadores podem ser solicitados a explicar e implementar algoritmos como o algoritmo de Grover, que é
+      usado para a busca não estruturada em computação quântica.</p>
+  </div>
+
+  <!-- Botão 4 -->
+  <button class="custom-button" onclick="exibirOcultar('texto4')">Codificação Quântica de Informação</button>
+  <div id="texto4" class="poppinsalt">
+    <p>Os prompts podem envolver a codificação e a correção de erros em qubits, usando códigos de correção de erros
+      quânticos, como códigos de superfície ou códigos estabilizadores.</p>
+  </div>
+
+  <!-- Botão 5 -->
+  <button class="custom-button" onclick="exibirOcultar('texto5')">Computação Quântica Distribuída</button>
+  <div id="texto5" class="poppinsalt">
+    <p>Os pesquisadores podem ser desafiados a projetar protocolos quânticos para comunicação e computação distribuídas,
+      que são cruciais para a construção de redes quânticas e sistemas de computação distribuída quântica.</p>
+  </div>
+
+  <!-- Botão 6 -->
+  <button class="custom-button" onclick="exibirOcultar('texto6')">Simulação Quântica de Sistemas Físicos</button>
+  <div id="texto6" class="poppinsalt">
+    <p>Os prompts podem envolver a simulação de sistemas físicos complexos usando computação quântica, como a simulação
+      de moléculas para aplicações em química quântica ou a simulação de materiais para aplicações em física de
+      materiais.</p>
+  </div>
+
+  <!-- Botão 7 -->
+  <button class="custom-button" onclick="exibirOcultar('texto7')">Criptografia Quântica e Segurança</button>
+  <div id="texto7" class="poppinsalt">
+    <p>Os pesquisadores podem ser desafiados a analisar protocolos de criptografia quântica, como a distribuição segura
+      de chaves ou a comunicação quântica segura, e a propor melhorias ou soluções para desafios específicos de
+      segurança.</p>
+  </div>
+
+  <div class="container">
+    <h2>
+      <center>Desvendando os Prompts na Computação Quântica</center>
+    </h2>
+    <p class="poppins">Na vastidão do mundo da computação, um pequeno termo desempenha um papel crucial: o prompt.
+      O terminal, também conhecido prompt, é como a chave que abre as portas para interações com sistemas complexos,
+      como os computadores quânticos.</p>
+
+    <h4>O Que São Prompts?</h4>
+    <p> Imagine-se diante de um painel de controle, pronto para dar instruções a um sistema. O prompt é exatamente isso:
+      uma indicação ou solicitação para que o usuário forneça algum tipo de entrada de linguagem natural.
+      Eles são instruções em linguagem natural que direcionam o sistema para realizar tarefas específicas,
+      e quanto mais bem formulados e detalhados, mais eficientes e aprofundados serão os sistemas e resultados. </p>
+
+    <h4>Os Qubits e a Escalabilidade?</h4>
+    <p>Os computadores quânticos, com seus qubits sensíveis a qualquer interferência do meio ambiente, são, em números,
+      limitados pela tecnologia atual. Aqui reside o primeiro desafio: criar prompts que sejam adaptáveis à
+      escalabilidade futura.
+      À medida que mais qubits são adicionados, os prompts devem trabalhar com essas novas adições.</p>
+
+    <h4>A Delicada Coerência Quântica</h4>
+    <p>Os qubits podem estar em estados de 0 e 1, ou até mesmo em uma superposição entre si. No entanto, a decoerência
+      ameaça essa interação.
+      Ela é o mecanismo pelo qual o mundo quântico se transforma em algo mais familiar, o mundo clássico.
+      Imagine um equilíbrio entre o quântico e a interferência do ambiente. Os prompts devem ser projetados de maneira
+      que possam
+      mitigar os efeitos da decoerência e manter a coerência quântica.</p>
+
+    <h4>O Desafio da Integração</h4>
+    <p>Aqui entra o segundo desafio: a integração com sistemas clássicos. A computação quântica não é uma ilha isolada;
+      ela deve coexistir com o mundo que conhecemos, afinal, como uma ideia nascente, demorará anos para que possa
+      substituir a tecnologia vigente, se é que irá.
+      Criar prompts que facilitem essa harmonia é uma algo necessário.</p>
+
+    <h4>Conclusão: A Quântica dos Prompts</h4>
+    <p>Em resumo, criar prompts eficazes para a computação quântica requer uma compreensão profunda das peculiaridades
+      quânticas e a
+      capacidade de enfrentar esses desafios com inovação. Assim, a harmonia quântica continua, com os prompts como suas
+      notas essenciais,
+      conduzindo-nos a novos horizontes na era da computação quântica.</p>
+  </div>
+  
+  <script src="../../Assets/Scripts/home.js"></script>
+
+  <script>
+    function exibirOcultar(id) {
+      var texto = document.getElementById(id);
+      // Se o texto está visível, oculta; caso contrário, exibe
+      texto.style.display = (texto.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
