@@ -13,7 +13,7 @@ const titulo = document.querySelector('.titulo-principal');
 typeWrite(titulo);
 
 document.addEventListener('DOMContentLoaded', function () {
-  const links = document.querySelectorAll('.topnav a');
+  const links = document.querySelectorAll('.topnav .redirect_into_page');
 
   links.forEach(link => {
       link.addEventListener('click', function (e) {
