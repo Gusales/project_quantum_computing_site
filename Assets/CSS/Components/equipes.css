@@ -41,3 +41,8 @@
   flex-wrap: wrap;
   padding-top: 10px;
 }
+
+.profile-picture {
+  max-width: 100px;
+  max-height: 100px;
+}
