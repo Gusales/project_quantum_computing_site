@@ -1,13 +1,17 @@
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) =>{
-
+    entries.forEach((entry) => {
+        const content = entry.target.querySelector('.timeline-content');
+        const dot = entry.target.querySelector('.timeline-dot');
+        const timelineItem = entry.target;
+        
         if(entry.isIntersecting){
-            entry.target.classList.add("timeline-show")
-            console.log(entry.target.classList)
+            content.classList.add("timeline-show");
+            dot.classList.add("animate-dot");
+            timelineItem.classList.add("blue-bar");
         }
     })
-})
+});
 
-const hiddenTimelineElements = document.querySelectorAll('.timeline-hidden')
+const timelineItems = document.querySelectorAll('.timeline-item');
 
-hiddenTimelineElements.forEach((ele) => observer.observe(ele))
+timelineItems.forEach((item) => observer.observe(item));
