@@ -79,7 +79,7 @@
 	filter: blur(5px);
 }
 
-@media(prefers-reduced-motion) or (min-width: 1300px){
+@media(prefers-reduced-motion){
 	.timeline-hidden{
 		transition: 0;
 	}
@@ -200,5 +200,26 @@
 	}
 	.timeline-item::before{
 		left: 7px;
+	}
+	.timeline-item:nth-child(odd) .timeline-hidden{
+		transform: translateX(250px);
+	
+	}
+	
+	.timeline-item:nth-child(even) .timeline-hidden{
+		transform: translateX(250px);
+	
+	}
+	
+	.timeline-item:nth-child(even) .timeline-show{
+		transform: translateX(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+	
+	.timeline-item:nth-child(odd) .timeline-show{
+		transform: translateX(0);
+		opacity: 1;
+		filter: blur(0);
 	}
 }
