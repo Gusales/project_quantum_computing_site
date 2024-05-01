@@ -56,6 +56,7 @@ header {
   /* Fixa a navegação no topo */
   position: fixed;
   padding: 10px;
+  margin-bottom: 5rem;
 }
 
 nav ul,
@@ -150,7 +151,7 @@ h1 {
   font-size: calc(var(--base-font-size) * 4.688);
   /* Line-height proporcional */
   line-height: calc(var(--base-font-size) * 4.688 * 1.2);
-
+  margin-top: 8vh;
   /* Indica o peso da fonte, o quão mais espessa ela é */
   font-weight: 800;
   color: #EEEEEE;

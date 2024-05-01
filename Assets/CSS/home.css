@@ -4,6 +4,7 @@
 @import './Components/equipes.css';
 @import './Components/timeline.css';
 @import './Components/Cards-animados.css';
+@import './Components/reportagens.css';
 
 :root {
   /* Tamanho base da fonte */
@@ -28,22 +29,22 @@ body {
 main,
 section {
   width: calc(100% - var(--page-margin));
-  min-height: 100vh;
+  min-height: fit-content + calc(2 * var(--page-margin));
   height: fit-content;
   margin: 0 calc(var(--page-margin) / 2);
   padding: 0;
 }
 
 header {
-  width: calc(100% - var(--page-margin));
+  width: 100%;
   /* background-color: #1F98D7; */
   min-height: 10vh;
   display: flex;
   align-items: center;
-  margin: 0 2rem;
-  padding: 0;
+  padding: 0 calc(var(--page-margin) / 2); 
   z-index: 4;
 }
+
 
 
 .menu__links {
@@ -198,11 +199,17 @@ main {
 
   :root {
     --base-font-size: 14px;
-    --page-margin: 0rem;
+    --page-margin: 1rem;
   }
+  header{
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+  
 
   main h2{
-    font-size: 25px;
+    font-size: 2rem;
+    text-align: center;
   }
 
   .mobile__show {
