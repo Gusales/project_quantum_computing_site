@@ -4,6 +4,7 @@
 @import './Components/equipes.css';
 @import './Components/timeline.css';
 @import './Components/Cards-animados.css';
+@import './Components/reportagens.css';
 
 :root {
   /* Tamanho base da fonte */

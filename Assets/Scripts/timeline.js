@@ -1,3 +1,5 @@
+const timelineItems = document.querySelectorAll('.timeline-item');
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         const content = entry.target.querySelector('.timeline-content');
@@ -11,7 +13,5 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 });
-
-const timelineItems = document.querySelectorAll('.timeline-item');
 
 timelineItems.forEach((item) => observer.observe(item));
