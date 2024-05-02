@@ -7,7 +7,6 @@ const filterCards = (c) => {
     c.target.classList.add("active");
 
     filterableCards.forEach(card => {
-        console.log("2")
         if(c.target.dataset.filter === "all" || card.dataset.name === c.target.dataset.filter ) {
             return card.classList.replace("fcard-hide", "fcard-show");
         }

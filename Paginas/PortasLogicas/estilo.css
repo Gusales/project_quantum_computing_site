@@ -1,6 +1,4 @@
-@import "../../Assets/CSS/style.css";
 @import "../../Assets/CSS/home.css";
-
 
 .cabecalho {
     border-bottom: #1F98D7 2px solid;
@@ -16,7 +14,7 @@
     right: 1285px;
 }
 
-.img1{
+.img1 {
     width: 300px;
     height: auto;
     text-align: center;
@@ -71,7 +69,7 @@ h1 {
     font-size: 40px;
     color: white;
     margin-top: 33px;
-    
+
 }
 
 p {
@@ -86,5 +84,3 @@ h3 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-
-
