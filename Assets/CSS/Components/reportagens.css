@@ -1,5 +1,5 @@
 #reportagens{
-    margin: 10vh 0;
+    margin: 10vh var(--page-margin);
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -41,8 +41,6 @@
     flex-direction: column;
     flex: 1 0 25%; 
 }
-
-
 
 .filterable-cards .card.fcard-hide {
     display: none;

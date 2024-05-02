@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
         const timelineItem = entry.target;
         
         if(entry.isIntersecting){
-            content.classList.add("timeline-show");
+            content.classList.add("timeline-appear");
             dot.classList.add("animate-dot");
             timelineItem.classList.add("blue-bar");
         }

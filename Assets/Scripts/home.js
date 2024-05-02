@@ -7,9 +7,10 @@ function handleShowModal() {
 
 }
 
-window.addEventListener('scroll',function(){ 
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('touchmove', handleScroll);
+
+function handleScroll() {
   var header = document.querySelector('header');
-  header.classList.toggle('scrolled', window.scrollY>0);  
-
-});
-
+  header.classList.toggle('scrolled', window.scrollY > 0);  
+}
