@@ -208,12 +208,9 @@ main {
     --page-margin: 2rem;
   }
 
-  body{
-    align-items: center;
-    overflow-x: hidden;
-  }
   
   header{
+    overflow-y: hidden;
     width: 100vw;
     overflow-x: hidden;
   }
