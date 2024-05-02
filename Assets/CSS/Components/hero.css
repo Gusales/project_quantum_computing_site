@@ -35,12 +35,13 @@
 .hero-svg{
   display: flex;
   justify-content: center;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 100%;
   filter: drop-shadow(2px 4px 100px #2D213C);
   width: 500px;
   height: 500px;
   background: url('./../../Media/Imagens/innovation-animate.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
@@ -70,6 +71,9 @@
 
   .hero-svg{
     background-image: url('./../../Media/Imagens/innovation-not-css.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
     width: 400px;
     height: 400px;
   }
