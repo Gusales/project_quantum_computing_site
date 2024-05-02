@@ -40,7 +40,7 @@
   filter: drop-shadow(2px 4px 100px #2D213C);
   width: 500px;
   height: 500px;
-  background: url('/Assets/Media/Imagens/innovation-animate.svg');
+  background: url('./../../Media/Imagens/innovation-animate.svg');
 }
 
 
@@ -69,7 +69,7 @@
   }
 
   .hero-svg{
-    background-image: url('./../../Media/Imagens/innovation-animate.svg');
+    background-image: url('./../../Media/Imagens/innovation-not-css.svg');
     width: 400px;
     height: 400px;
   }
