@@ -6,6 +6,8 @@
 @import './Components/Cards-animados.css';
 @import './Components/reportagens.css';
 
+
+
 :root {
   /* Tamanho base da fonte */
   --page-margin: 4rem;
@@ -200,7 +202,7 @@ main {
 
 
 @media screen and (max-width: 1023px) {
-
+  html{overflow-x: hidden;}
   :root {
     --base-font-size: 14px;
     --page-margin: 2rem;
