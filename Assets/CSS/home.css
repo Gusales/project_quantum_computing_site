@@ -52,9 +52,9 @@ header.scrolled{
 .menu__links {
   min-height: 90vh;
   top: 10vh;
-  left: calc(var(--page-margin) / 2);
+  left: 0;
+  max-width: 100vw;
   width: fit-content;
-  min-width: 200px;
   border-right: 2px solid rgb(12, 22, 40);
   border-top: 2px solid rgb(12, 22, 40);
   background: #0A0F19;
@@ -209,6 +209,7 @@ main {
     align-items: center;
     overflow-x: hidden;
   }
+  
   header{
     width: 100vw;
     overflow-x: hidden;
