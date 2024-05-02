@@ -210,7 +210,6 @@ main {
 
   
   header{
-    overflow-y: hidden;
     width: 100vw;
     overflow-x: hidden;
   }
@@ -227,10 +226,31 @@ main {
   .mobile__hidden {
     display: none;
   }
+
+  .logo{
+    height: 100%;
+    width: fit-content;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .logo{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    overflow: hidden;
+  }
+  .logo{
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .logo{
+    width: 50%
   }
 }
