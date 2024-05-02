@@ -5,7 +5,8 @@
 @import './Components/timeline.css';
 @import './Components/Cards-animados.css';
 @import './Components/reportagens.css';
-
+@import './Components/funcionamento.css';
+@import './Components/desenvolvimento.css';
 
 
 :root {

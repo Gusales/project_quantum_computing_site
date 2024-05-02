@@ -88,9 +88,9 @@
     </figure>
   </section>
   <main id="computing_origins">
-    <h2 class="hanken-grotesk">
+    <h3 class="hanken-grotesk">
       Origem da Computação Quântica
-    </h2>
+    </h3>
     <div class="computing_origins">
       <div class="timeline-items">
         <div class="timeline-item">
@@ -200,11 +200,72 @@
         </div>
       </div>
     </div>
+    <br>
+    <section id="funcionamento">
+    <h3 class="hanken-grotesk" >Funcionamento dos computadores quânticos</h3>
+    <p id="textoFuncionamento" class="poppins"> 
+      O funcionamento dos computadores quânticos é alimentado por dois fenômenos incríveis 
+      da mecânica quântica: superposição e emaranhamento. 
+      Esses conceitos revolucionários permitem que os qubits, as unidades básicas de informação, 
+      realizem cálculos em um mundo onde as regras da física tradicional não se aplicam. 
+      <br>
+     <strong> Clique para descobrir como essas maravilhas quânticas estão moldando o futuro da computação!</strong>
+    </p>
+    <div class="filter-text-container">
+      <div class="filter-texts">        
+        <button class="btn-cor-primaria btn-tamanho2 hanken-grotesk active" data-filter="qubits">Qubit</button>
+        <button class="btn-cor-primaria btn-tamanho2 hanken-grotesk" data-filter="superposicao">Superposição</button> 
+        <button class="btn-cor-primaria btn-tamanho2 hanken-grotesk" data-filter="entrelacamento">Entrelaçamento</button>
+      </div>
+  
+      <div class="filterable-texts">
+        <p class="regular-text poppins card" data-name="qubits">
+          Qubits são as unidades fundamentais de informação na computação quântica, funcionando de forma análoga aos bits na computação clássica. 
+          No entanto, ao contrário dos bits, que só podem existir em um estado de 0 ou 1 em um determinado momento, 
+          os qubits exploram os fenômenos quânticos para representar informações de maneira mais complexa.
+        </p>
+  
+        <p class="regular-text poppins card fcard-hide" data-name="superposicao">
+          A superposição é o pilar da mecânica quântica que possibilita a existência dos qubits. 
+          Essencialmente, ela significa que uma partícula quântica pode existir em múltiplos estados simultaneamente antes de ser medida. 
+          Isso significa que, ao contrário da física clássica, onde um objeto só pode estar em um estado definido, como 0 ou 1, 
+          um qubit pode representar uma combinação ponderada de ambos ao mesmo tempo. É como se a matéria estivesse "flutuando" em todos os estados possíveis até ser observada. 
+          Este é um dos conceitos mais intrigantes da física quântica e é a base para a revolucionária computação quântica. 
+        </p>
+  
+        <p class="regular-text poppins card fcard-hide" data-name="entrelacamento">
+          O Entrelaçamento é um fenômeno fascinante da física quântica no qual um grupo de partículas torna-se interligado de tal forma que não é possível determinar 
+          seus estados independentes sem considerar o estado das outras partículas do grupo. Isso significa que, mesmo quando separadas por grandes distâncias, 
+          as partículas emaranhadas compartilham correlações instantâneas e intrincadas, 
+          de forma que uma mudança no estado de uma partícula afeta instantaneamente o estado de outra, independentemente da distância entre elas. 
+          Este fenômeno desafia nossa intuição sobre a natureza da realidade e tem implicações profundas para a comunicação e computação quântica.
+        </p>
+      </div>
+    </div>
+    </section>
+    <br>
+    <div id="desenvolvimento">
+      <h3 class="hanken-grotesk"> Desenvolvimento da Computação Quântica</h3>
+  
+      <p class="poppins timeline-content">
+        O desenvolvimento da computação quântica começou nos anos 80 e 90 com conceitos teóricos, e na década de 2000, os primeiros qubits foram demonstrados em laboratório. 
+        Na década de 2010, empresas como IBM, Google e Microsoft competiram para construir computadores quânticos mais poderosos, chegando a sistemas com dezenas e até centenas de qubits. 
+        No entanto, desafios como a coerência dos qubits e a construção de sistemas escaláveis persistem.
+        <br>
+        Apesar disso, a pesquisa continua avançando, e a computação quântica promete revolucionar áreas como criptografia, simulação de materiais e inteligência artificial.
+        <br>
+        Entretanto, a implementação total da computação quântica enfrenta desafios significativos. 
+        Os qubits, unidades fundamentais de informação quântica, são extremamente sensíveis ao ambiente externo, perdendo sua coerência rapidamente e 
+        tornando-se propensos a erros de leitura e escrita.
+        <br>
+        Além disso, construir sistemas quânticos escaláveis é complexo, exigindo controle preciso e 
+        interconexão eficiente de muitos qubits. A tolerância a falhas também é crucial, pois os qubits são suscetíveis a flutuações e ruídos. </p>
+    </div>
   </main>
   <section id="reportagens">
-    <h2 class="hanken-grotesk">
+    <h3 class="hanken-grotesk">
       Reportagens
-    </h2>
+    </h3>
     <div class="filter-buttons">
       <button class="btn-cor-primaria btn-tamanho1 active" data-filter="all">Todas</button>
       <button class="btn-cor-primaria btn-tamanho1" data-filter="logica-e-programacao">Lógica e Programação</button>
@@ -370,7 +431,7 @@
   </section>
 
   <section id="equipes">
-    <h2 class="hanken-grotesk">Equipes</h2>
+    <h3 class="hanken-grotesk">Equipes</h3>
     <hr />
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -899,6 +960,7 @@
   <script src="./Assets/Scripts/timeline.js"></script>
   <script src="./Assets/Scripts/filterCards.js"></script>
   <script src="./Assets/Scripts/home.js"></script>
+  <script src="./Assets/Scripts/changeText.js"></script>
 </body>
 
 </html>
