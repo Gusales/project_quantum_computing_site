@@ -14,4 +14,16 @@ const filterCards = (c) => {
     });
 }
 
+function redirectTo(url) {
+    window.location.href = url;
+}
+
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
+
+filterableCards.forEach(card => {
+    card.addEventListener('click', () => {
+        var url = card.getAttribute('data-url');
+        redirectTo(url);
+    });
+});
+
