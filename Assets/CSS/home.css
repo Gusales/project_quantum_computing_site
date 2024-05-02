@@ -36,8 +36,7 @@ section {
 }
 
 header {
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
   /* background-color: #1F98D7; */
   min-height: 10vh;
   display: flex;
@@ -205,13 +204,14 @@ main {
     --base-font-size: 14px;
     --page-margin: 2rem;
   }
-  header{
-    top: 0;
-    padding: 0 1rem;
-    justify-content: space-between;
-  }
+
   body{
     align-items: center;
+    overflow-x: hidden;
+  }
+  header{
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   main h2{
@@ -228,6 +228,6 @@ main {
   }
 
   header>.logo {
-    width: 55%;
+    width: 50%;
   }
 }
