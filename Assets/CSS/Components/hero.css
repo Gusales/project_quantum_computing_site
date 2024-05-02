@@ -69,7 +69,7 @@
   }
 
   .hero-svg{
-    background-image: url('../../Media/Imagens/innovation-not-css.svg');
+    background-image: url('./../../Media/Imagens/innovation-animate.svg');
     width: 400px;
     height: 400px;
   }
