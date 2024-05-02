@@ -37,6 +37,7 @@ section {
 
 header {
   width: 100%;
+  max-width: 100%;
   /* background-color: #1F98D7; */
   min-height: 10vh;
   display: flex;
@@ -45,7 +46,9 @@ header {
   z-index: 4;
 }
 
-
+header.scrolled{ 
+  background-color: rgba(14,23,39); 
+}
 
 .menu__links {
   min-height: 90vh;
@@ -126,7 +129,8 @@ header svg {
 }
 
 .btn-menu {
-  margin-right: auto;
+  position: absolute;
+  left: calc(0 + var(--page-margin));
 }
 
 /* SVG e animação*/
@@ -195,17 +199,20 @@ main {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
 
   :root {
     --base-font-size: 14px;
-    --page-margin: 1rem;
+    --page-margin: 2rem;
   }
   header{
+    top: 0;
     padding: 0 1rem;
     justify-content: space-between;
   }
-  
+  body{
+    align-items: center;
+  }
 
   main h2{
     font-size: 2rem;

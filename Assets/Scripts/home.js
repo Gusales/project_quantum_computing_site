@@ -7,26 +7,10 @@ function handleShowModal() {
 
 }
 
-window.addEventListener('scroll',function(){ 
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('touchmove', handleScroll);
+
+function handleScroll() {
   var header = document.querySelector('header');
-  header.classList.toggle('scrolled', window.scrollY>0);  
-
-});
-
-const timelineItems = document.querySelectorAll('.timeline-item');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        const content = entry.target.querySelector('.timeline-content');
-        const dot = entry.target.querySelector('.timeline-dot');
-        const timelineItem = entry.target;
-        
-        if(entry.isIntersecting){
-            content.classList.add("timeline-show");
-            dot.classList.add("animate-dot");
-            timelineItem.classList.add("blue-bar");
-        }
-    })
-});
-
-timelineItems.forEach((item) => observer.observe(item));
+  header.classList.toggle('scrolled', window.scrollY > 0);  
+}
