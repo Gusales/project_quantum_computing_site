@@ -1,5 +1,5 @@
 #reportagens{
-    margin: 10vh var(--page-margin);
+    margin-top: 10vh;
     gap: 2rem;
     justify-content: center;
     align-items: center;

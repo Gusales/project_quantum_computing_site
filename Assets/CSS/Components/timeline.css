@@ -1,13 +1,13 @@
 .computing_origins{
 	margin-top: 10vh;
 	min-height: 100vh;
+	height: fit-content;
 }
 .large-text {
     color: #FDC238;
     font-weight: 700;
 }
 .timeline-items{
-	max-width: 1000px;
 	margin:auto;
 	display: flex;
 	flex-wrap: wrap;
