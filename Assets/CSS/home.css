@@ -32,7 +32,7 @@ section {
   width: calc(100% - var(--page-margin));
   min-height: fit-content + calc(2 * var(--page-margin));
   height: fit-content;
-  margin: 0 calc(var(--page-margin) / 2);
+  margin: 0;
   padding: 0;
 }
 
@@ -45,6 +45,7 @@ header {
   align-items: center;
   z-index: 4;
   padding-left: calc(var(--page-margin) / 2);
+  padding-right: calc(var(--page-margin) / 2);
 }
 
 header.scrolled{ 
@@ -215,6 +216,7 @@ main {
   
   header{
     width: 100vw;
+    max-width: 100%;
     min-height: 75px;
     overflow: hidden;
   }

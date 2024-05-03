@@ -1,5 +1,5 @@
 footer {
-  width: 100%;
+  width: calc(100% - var(--page-margin));
   min-height: 30vh;
   padding: 0 .95rem .95rem;
   display: flex;
