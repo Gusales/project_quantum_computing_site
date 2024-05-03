@@ -1,6 +1,8 @@
 document.getElementById("handleShowModal").addEventListener('click', handleShowModal)
 
 function handleShowModal() {
+  this.classList.toggle('opened')
+  this.setAttribute('aria-expanded', this.classList.contains('opened'))
   const menuLinks = document.querySelector('.menu__links').classList
 
   menuLinks.contains('hidden') ? menuLinks.replace('hidden', 'show') : menuLinks.replace('show', 'hidden')
