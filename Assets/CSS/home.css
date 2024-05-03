@@ -214,6 +214,7 @@ main {
     width: 100vw;
     min-height: 75px;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   main h2{
