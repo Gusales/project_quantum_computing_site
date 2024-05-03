@@ -202,6 +202,9 @@ main {
 
 
 @media screen and (max-width: 1023px) {
+  html{
+    overflow-x: hidden;
+  }
   :root {
     --base-font-size: 14px;
     --page-margin: 2rem;
@@ -239,9 +242,7 @@ main {
 
 
 @media screen and (max-width: 768px) {
-  html{
-    overflow-x: hidden;
-  }
+
   header{
     width: 100vw;
     min-height: 75px;
