@@ -206,7 +206,9 @@ main {
     --base-font-size: 14px;
     --page-margin: 2rem;
   }
-
+  body{
+    overflow-x: hidden;
+  }
   
   header{
     width: 100vw;
@@ -237,9 +239,6 @@ main {
 
 
 @media screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-  }
   header{
     overflow: hidden;
   }
