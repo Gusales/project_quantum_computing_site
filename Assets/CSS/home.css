@@ -35,7 +35,7 @@ section {
   width: calc(100% - var(--page-margin));
   min-height: fit-content + calc(2 * var(--page-margin));
   height: fit-content;
-  margin: 8vh 0;
+  margin: 0 calc(var(--page-margin) / 2);
   padding: 0;
 }
 
