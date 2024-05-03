@@ -213,8 +213,7 @@ main {
   header{
     width: 100vw;
     min-height: 75px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   main h2{
@@ -240,7 +239,12 @@ main {
 
 
 @media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   header{
+    width: 100vw;
+    min-height: 75px;
     overflow: hidden;
   }
   .logo{
