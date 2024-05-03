@@ -38,17 +38,19 @@ section {
 
 header {
   width: 100vw;
+  max-width: 100%;
   /* background-color: #1F98D7; */
   min-height: 10vh;
   display: flex;
   align-items: center;
-  padding: 0 calc(var(--page-margin) / 2); 
   z-index: 4;
+  padding-left: calc(var(--page-margin) / 2);
 }
 
 header.scrolled{ 
   background-color: rgba(14,23,39); 
 }
+
 
 .menu__links {
   min-height: 90vh;
@@ -200,7 +202,6 @@ main {
 
 
 @media screen and (max-width: 1023px) {
-  html{overflow-x: hidden;}
   :root {
     --base-font-size: 14px;
     --page-margin: 2rem;
@@ -209,6 +210,7 @@ main {
   
   header{
     width: 100vw;
+    min-height: 75px;
     overflow-x: hidden;
   }
 
@@ -232,23 +234,13 @@ main {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .logo{
-    width: 50%;
-  }
-}
+
 
 @media screen and (max-width: 768px) {
   header{
     overflow: hidden;
   }
   .logo{
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  .logo{
-    width: 50%
+    width: 50%;
   }
 }
